@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ratan Tata Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+      color: #222;
+    }
+    header {
+      background: #0f2027;
+      color: #fff;
+      padding: 2rem 0;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 2px;
+    }
+    .profile-img {
+      width: 150px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      margin-top: 1rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    .about {
+      max-width: 700px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      padding: 2rem;
+      text-align: center;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      width: 280px;
+      padding: 1.5rem;
+      transition: transform 0.3s;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+    .card-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #0f2027;
+    }
+    .timeline {
+      max-width: 800px;
+      margin: 3rem auto;
+      position: relative;
+      padding-left: 40px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #0f2027;
+      border-radius: 2px;
+    }
+    .timeline-event {
+      position: relative;
+      margin-bottom: 2rem;
+      padding-left: 30px;
+    }
+    .timeline-event::before {
+      content: '';
+      position: absolute;
+      left: -10px;
+      top: 10px;
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border: 4px solid #0f2027;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .timeline-title {
+      font-weight: bold;
+      color: #0f2027;
+    }
+    .timeline-date {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 0.3rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      background: #0f2027;
+      color: #fff;
+      margin-top: 3rem;
+    }
+    @media (max-width: 700px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      .timeline {
+        padding-left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://media2.themorningcontext.com/media/posts_images/111024_Ratan_Tata_Ujval__T_Surender.jpg" alt="Ratan Tata" />
+    <h1>Ratan Tata</h1>
+    <p>Industrialist | Philanthropist | Visionary Leader</p>
+  </header>
+  <section class="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      Ratan Tata is an Indian industrialist, philanthropist, and former chairman of Tata Sons. Renowned for his visionary leadership, he transformed Tata Group into a global powerhouse, championed innovation, and inspired generations with his humility and commitment to social causes.
+    </p>
+  </section>
+  <section>
+    <h2 style="text-align:center;">Highlights</h2>
+    <div class="cards">
+      <div class="card" data-aos="flip-left">
+        <div class="card-title">Leadership</div>
+        <p>Led Tata Group to global expansion, acquiring Jaguar Land Rover, Tetley, and more.</p>
+      </div>
+      <div class="card" data-aos="flip-right">
+        <div class="card-title">Innovation</div>
+        <p>Launched Tata Nano, the world’s most affordable car, and Tata Indica, India’s first indigenous car.</p>
+      </div>
+      <div class="card" data-aos="flip-up">
+        <div class="card-title">Philanthropy</div>
+        <p>Donated billions to education, healthcare, and rural development through Tata Trusts.</p>
+      </div>
+      <div class="card" data-aos="flip-down">
+        <div class="card-title">Awards</div>
+        <p>Recipient of Padma Vibhushan, Padma Bhushan, and numerous global honors.</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2 style="text-align:center;">Timeline</h2>
+    <div class="timeline">
+      <div class="timeline-event" data-aos="fade-right">
+        <div class="timeline-date">1937</div>
+        <div class="timeline-title">Born in Mumbai, India</div>
+      </div>
+      <div class="timeline-event" data-aos="fade-left">
+        <div class="timeline-date">1991</div>
+        <div class="timeline-title">Became Chairman of Tata Group</div>
+      </div>
+      <div class="timeline-event" data-aos="fade-right">
+        <div class="timeline-date">2008</div>
+        <div class="timeline-title">Acquired Jaguar Land Rover</div>
+      </div>
+      <div class="timeline-event" data-aos="fade-left">
+        <div class="timeline-date">2012</div>
+        <div class="timeline-title">Retired as Chairman</div>
+      </div>
+      <div class="timeline-event" data-aos="fade-right">
+        <div class="timeline-date">2021</div>
+        <div class="timeline-title">Continues Philanthropic Work</div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Connect: <a href="https://twitter.com/RNTata2000" style="color:#fff;text-decoration:underline;">@RNTata2000</a> | <a href="https://www.linkedin.com/in/ratan-tata-73b3b010/" style="color:#fff;text-decoration:underline;">LinkedIn</a></p>
+    <p>&copy; 2025 Ratan Tata Portfolio</p>
+  </footer>
+  <!-- AOS Animation Library -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true
+    });
+  </script>
+</body>
+</html>
